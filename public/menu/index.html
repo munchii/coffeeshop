@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <a class="navbar-brand" href="https://munchii.com">Munchii.com, LLC</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,13 +28,12 @@
       <div class="card-columns">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Sample HTML</h5>
-            <p class="card-text">Setup (once per HTML page):</p>
+            <h5 class="card-title">How it Works</h5>
+            <p class="card-text">Add a script (once per HTML page):</p>
             <pre class="card-text"><code>&lt;script src="https://munchii.com/menu.js"&gt;&lt;/script&gt;</code></pre>
-            <p class="card-text">Add an order button:</p>
-            <pre class="card-text"><code>&lt;div data-munchii-menu-item="..." style="visibility: hidden"&gt;
+            <p class="card-text">Add an order button (per menu item):</p>
+            <pre class="card-text"><code>&lt;div data-munchii-menu-item="example_d6hzsqu7wxw86uobjx5sj1mh9c" style="visibility: hidden"&gt;
 &lt;/div&gt;</code></pre>
-            <small>... is placeholder for a unique menu item id.</small>
           </div>
         </div>
 
@@ -42,11 +41,7 @@
           <div class="card-body">
             <h5 class="card-title">Brewed</h5>
             <p class="card-text">Don't settle for bitter - our house roast like you've never tasted coffee before.</p>
-            <ul class="card-text">
-              <li>Small (12 oz.)</li>
-              <li>Medium (16 oz.)</li>
-              <li>Large (20 oz.)</li>
-            </ul>
+            <div class="card-text" data-munchii-menu-item="ydq61m5mywhj1bd3jpqffxppuy" style="visibility: hidden"></div>
           </div>
         </div>
 
@@ -54,11 +49,7 @@
           <div class="card-body">
             <h5 class="card-title">Americano</h5>
             <p class="card-text">Shots of espresso from our house roast balanced with hot water.</p>
-            <ul class="card-text">
-              <li>Small (12 oz.)</li>
-              <li>Medium (16 oz.)</li>
-              <li>Large (20 oz.)</li>
-            </ul>
+            <div class="card-text" data-munchii-menu-item="nbnuortecxdnq4hhbuq1jxwept" style="visibility: hidden"></div>
           </div>
         </div>
     
@@ -66,11 +57,7 @@
           <div class="card-body">
             <h5 class="card-title">Cappuccino</h5>
             <p class="card-text">Rich whole milk foam and shots of espresso from our house roast.</p>
-            <ul class="card-text">
-              <li>Small (12 oz.)</li>
-              <li>Medium (16 oz.)</li>
-              <li>Large (20 oz.)</li>
-            </ul>
+            <div class="card-text" data-munchii-menu-item="ysi4r97tgou5mjh669qwzxibhg" style="visibility: hidden"></div>
           </div>
         </div>
 
@@ -78,11 +65,7 @@
           <div class="card-body">
             <h5 class="card-title">Latte</h5>
             <p class="card-text">Bold shots of espresso from our house roast combined with perfectly steamed whole milk.</p>
-            <ul class="card-text">
-              <li>Small (12 oz.)</li>
-              <li>Medium (16 oz.)</li>
-              <li>Large (20 oz.)</li>
-            </ul>
+            <div class="card-text" data-munchii-menu-item="8autsw3d7g94bkfejanc47qg6q" style="visibility: hidden"></div>
           </div>
         </div>
       </div>
