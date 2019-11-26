@@ -14,7 +14,7 @@
     "build-resources": "cdk synthesize --app dist/website.js --output dist/cdk.out",
     "deploy": "npm run build && AWS_REGION=us-west-2 AWS_PROFILE=munchii npm run deploy-resources && AWS_REGION=us-west-2 AWS_PROFILE=munchii npm run deploy-content",
     "deploy-resources": "cdk deploy --app dist/website.js --output dist/cdk.out",
-    "deploy-content": "aws s3 sync --delete ./public s3://`node dist/get-physical-id.js`",
+    "deploy-content": "aws s3 sync --delete --exclude \"*.DS_Store\" ./public s3://`node dist/get-physical-id.js` --cache-control \"max-age=60\"",
     "start": "node dist/local-server.js"
   },
   "devDependencies": {
