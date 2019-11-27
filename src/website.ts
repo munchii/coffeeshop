@@ -14,7 +14,7 @@ class WebsiteStack extends Stack {
     });
 
     new CloudFrontWebDistribution(this, "Website", {
-      comment: process.env.npm_config_domain_name,
+      comment: "coffeeshop.munchii.com",
       originConfigs: [{
         behaviors: [{ isDefaultBehavior: true }],
         customOriginSource: {
