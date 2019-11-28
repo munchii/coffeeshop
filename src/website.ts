@@ -1,5 +1,4 @@
-import { CfnCloudFrontOriginAccessIdentity, CloudFrontWebDistribution, SecurityPolicyProtocol, SSLMethod, OriginProtocolPolicy } from "@aws-cdk/aws-cloudfront";
-import { CanonicalUserPrincipal } from "@aws-cdk/aws-iam";
+import { CloudFrontWebDistribution, OriginProtocolPolicy } from "@aws-cdk/aws-cloudfront";
 import { Bucket } from "@aws-cdk/aws-s3";
 import { App, Construct, RemovalPolicy, Stack, StackProps } from "@aws-cdk/core";
 
