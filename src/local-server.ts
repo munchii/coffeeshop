@@ -3,7 +3,7 @@ import express from "express";
 function modify(req, res, next){
   const write = res.write;
   res.write = function (chunk) {
-    if (process.argv[2] === "--local" && res.getHeader("Content-Type").indexOf("text/html") > -1) {
+    if (process.argv.includes("--local") && res.getHeader("Content-Type").includes("text/html")) {
       const parts: string[] = chunk.toString().split("https://food.munchii.com");
       // Fix content to match content length header
       const padding = " ".repeat(3 * (parts.length - 1));
