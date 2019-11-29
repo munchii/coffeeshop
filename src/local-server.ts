@@ -3,11 +3,12 @@ import express from "express";
 function modify(req, res, next){
   const write = res.write;
   res.write = function (chunk) {
-    if (process.argv[2] === "--local" && res.getHeader('Content-Type').indexOf('text/html') > -1) {
-      const replacement = chunk.toString()
-        .split("https://food.munchii.com")
-        .join("http://localhost:8100")
-      write.apply(this, [Buffer.from(replacement)]);
+    if (process.argv[2] === "--local" && res.getHeader("Content-Type").indexOf("text/html") > -1) {
+      const parts: string[] = chunk.toString().split("https://food.munchii.com");
+      // Fix content to match content length header
+      const padding = " ".repeat(3 * (parts.length - 1));
+
+      write.apply(this, [Buffer.from(parts.join("http://localhost:8100") + padding)]);
     } else {
       write.apply(this, arguments);
     }
