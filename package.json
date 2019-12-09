@@ -10,10 +10,10 @@
   "scripts": {
     "build": "rm -rf dist && npm run build-compile && npm run build-resources",
     "build-compile": "tsc",
-    "build-resources": "cdk synthesize --app dist/infrastructure.js --output dist/cdk.out",
+    "build-resources": "cdk synthesize --app \"node dist/infrastructure.js\" --output dist/cdk.out",
     "deploy": "npm run build && AWS_REGION=us-west-2 AWS_PROFILE=munchii npm run deploy-resources && AWS_REGION=us-west-2 AWS_PROFILE=munchii npm run deploy-content",
-    "deploy-resources": "cdk deploy --app dist/infrastructure.js --output dist/cdk.out",
-    "deploy-content": "aws s3 sync --delete --exclude \"*.DS_Store\" ./public s3://`node dist/get-physical-id.js` --cache-control \"max-age=60\"",
+    "deploy-resources": "cdk deploy --app \"node dist/infrastructure.js\" --output dist/cdk.out",
+    "deploy-content": "aws2 s3 sync --delete --exclude \"*.DS_Store\" ./public s3://`node dist/get-physical-id.js` --cache-control \"max-age=60\"",
     "start": "npm run build-compile && node dist/local-server.js",
     "start-local": "npm run build-compile && node dist/local-server.js --local"
   },
