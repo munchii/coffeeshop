@@ -1,6 +1,7 @@
 import { CloudFrontWebDistribution, OriginProtocolPolicy } from "@aws-cdk/aws-cloudfront";
 import { Bucket } from "@aws-cdk/aws-s3";
 import { App, Construct, RemovalPolicy, Stack, StackProps } from "@aws-cdk/core";
+import "source-map-support/register";
 
 class WebsiteStack extends Stack {
   constructor(scope: Construct, name: string, props: StackProps) {

@@ -1,4 +1,5 @@
 import CloudFormation from "aws-sdk/clients/cloudformation";
+import "source-map-support/register";
 
 const cloudFormation = new CloudFormation();
 

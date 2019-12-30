@@ -1,6 +1,7 @@
 import express from "express";
+import "source-map-support/register";
 
-function modify(req, res, next){
+function modify(req, res, next) {
   const write = res.write;
   res.write = function (chunk) {
     if (process.argv.includes("--local") && res.getHeader("Content-Type").includes("text/html")) {
