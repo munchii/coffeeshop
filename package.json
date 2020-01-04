@@ -15,7 +15,7 @@
     "deploy-resources": "cdk deploy --app \"node dist/infrastructure.js\" --output dist/cdk.out",
     "deploy-content": "aws2 s3 sync --delete --exclude \"*.DS_Store\" ./public s3://`node dist/get-physical-id.js` --cache-control \"max-age=60\"",
     "start": "npm run build-compile && node dist/local-server.js",
-    "start-local": "npm run build-compile && node dist/local-server.js --local"
+    "start-local": "npm run start -- --local"
   },
   "devDependencies": {
     "@aws-cdk/aws-cloudfront": "1.18.0",
