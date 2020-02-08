@@ -1,79 +1,101 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset=utf-8>
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <title>Coffee Shop</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="navbar-brand">
-          <small>Return to</small>
-          <a href="https://munchii.com" style="color: #4CAF50">munchii.com</a>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158049160-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158049160-1');
+  </script>
+
+  <meta charset=utf-8>
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="navbar-brand">
+      <small>Return to</small>
+      <a href="https://munchii.com" style="color: #4CAF50">munchii.com</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav-content">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Coffee Shop</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link">Menu</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/munchii/coffeeshop/blob/master/public/menu/index.html">
+            View on GitHub
+            <img class="d-block-inline align-baseline" style="height: 1em; width: 1em" src="/images/github.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" style="padding: 1em;">
+    <div class="card-columns">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Brewed</h5>
+          <p class="card-text">Don't settle for bitter - our house roast like you've never tasted coffee before.</p>
+          <div class="card-text" data-munchii-menu-item="ydq61m5mywhj1bd3jpqffxppuy" style="visibility: hidden"></div>
+        </div>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nav-content">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Coffee Shop</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link">Menu</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/munchii/coffeeshop/blob/master/public/menu/index.html">
-              View on GitHub
-              <img class="d-block-inline align-baseline" style="height: 1em; width: 1em" src="/images/github.png">
-            </a>
-          </li>
-        </ul>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Americano</h5>
+          <p class="card-text">Shots of espresso from our house roast balanced with hot water.</p>
+          <div class="card-text" data-munchii-menu-item="nbnuortecxdnq4hhbuq1jxwept" style="visibility: hidden"></div>
+        </div>
       </div>
-    </nav>
 
-    <div class="container" style="padding: 1em;">
-      <div class="card-columns">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Brewed</h5>
-            <p class="card-text">Don't settle for bitter - our house roast like you've never tasted coffee before.</p>
-            <div class="card-text" data-munchii-menu-item="ydq61m5mywhj1bd3jpqffxppuy" style="visibility: hidden"></div>
-          </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Cappuccino</h5>
+          <p class="card-text">Rich whole milk foam and shots of espresso from our house roast.</p>
+          <div class="card-text" data-munchii-menu-item="ysi4r97tgou5mjh669qwzxibhg" style="visibility: hidden"></div>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Americano</h5>
-            <p class="card-text">Shots of espresso from our house roast balanced with hot water.</p>
-            <div class="card-text" data-munchii-menu-item="nbnuortecxdnq4hhbuq1jxwept" style="visibility: hidden"></div>
-          </div>
-        </div>
-    
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Cappuccino</h5>
-            <p class="card-text">Rich whole milk foam and shots of espresso from our house roast.</p>
-            <div class="card-text" data-munchii-menu-item="ysi4r97tgou5mjh669qwzxibhg" style="visibility: hidden"></div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Latte</h5>
-            <p class="card-text">Bold shots of espresso from our house roast combined with perfectly steamed whole milk.</p>
-            <div class="card-text" data-munchii-menu-item="8autsw3d7g94bkfejanc47qg6q" style="visibility: hidden"></div>
-          </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Latte</h5>
+          <p class="card-text">Bold shots of espresso from our house roast combined with perfectly steamed whole milk.
+          </p>
+          <div class="card-text" data-munchii-menu-item="8autsw3d7g94bkfejanc47qg6q" style="visibility: hidden"></div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://food.munchii.com/button.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://food.munchii.com/button.js"></script>
+</body>
+
 </html>
